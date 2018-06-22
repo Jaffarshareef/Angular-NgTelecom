@@ -1,18 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { DthComponent } from './dth/dth.component';
+import { BroadBandComponent } from './broad-band/broad-band.component';
+import { HeaderComponent } from './header/header.component';
+import { OrderByPipe } from './order-by.pipe';
+import { PlanService } from './plan.service';
+
+import { FilterPipe } from './filter.pipe';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MobileComponent,
+    DthComponent,
+    BroadBandComponent,
+    HeaderComponent,
+    OrderByPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule, FormsModule
   ],
-  providers: [],
+  providers: [HttpClient, PlanService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
