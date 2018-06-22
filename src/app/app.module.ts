@@ -12,6 +12,7 @@ import { OrderByPipe } from './order-by.pipe';
 import { PlanService } from './plan.service';
 
 import { FilterPipe } from './filter.pipe';
+import { AppendTextDirective } from './append-text.directive';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FilterPipe } from './filter.pipe';
     BroadBandComponent,
     HeaderComponent,
     OrderByPipe,
-    FilterPipe
+    FilterPipe,
+    AppendTextDirective
   ],
   imports: [
     BrowserModule,
