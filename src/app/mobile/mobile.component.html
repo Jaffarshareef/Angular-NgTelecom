@@ -1,19 +1,4 @@
 <div class="nav navbar-expand">
     <input type='text' name="srchString" [(ngModel)]='srchString'>
 </div>
-<table class="table table-bordered">
-    <tr>
-        <th>Plan Name</th>
-        <th>Talk Time</th>
-        <th>SMS</th>
-        <th>InterNet</th>
-    </tr>
-
-    <tr *ngFor="let eachPlan of mobilePlanList |filter:'name':srchString">
-        <td>{{eachPlan.name}}</td>
-        <td>{{eachPlan.talktime}}</td>
-        <td>{{eachPlan.sms}}</td>
-        <td>{{eachPlan.data}}</td>
-    </tr>
-
-</table>
+<app-grid [data]='mobilePlanList'></app-grid>

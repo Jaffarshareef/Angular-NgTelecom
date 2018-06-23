@@ -13,6 +13,7 @@ import { PlanService } from './plan.service';
 
 import { FilterPipe } from './filter.pipe';
 import { AppendTextDirective } from './append-text.directive';
+import { GridComponent } from './grid/grid.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AppendTextDirective } from './append-text.directive';
     HeaderComponent,
     OrderByPipe,
     FilterPipe,
-    AppendTextDirective
+    AppendTextDirective,
+    GridComponent
   ],
   imports: [
     BrowserModule,
