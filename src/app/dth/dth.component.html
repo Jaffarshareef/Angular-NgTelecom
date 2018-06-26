@@ -1,3 +1,5 @@
-<p>
-  dth works!
-</p>
+<div class="nav navbar-expand">
+    <input type='text' name="srchString" [(ngModel)]='srchString'>
+</div>
+
+<app-grid [data]='dthPlanList' [srchString]=srchString></app-grid>

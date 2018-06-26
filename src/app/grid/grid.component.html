@@ -6,7 +6,7 @@
     </thead>
 
     <tbody>
-        <tr *ngFor="let record of records">
+        <tr *ngFor="let record of records |filter:'name':srchString">
             <td *ngFor="let key of keys">{{ record[key] }}</td>
         </tr>
     </tbody>

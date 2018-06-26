@@ -24,9 +24,25 @@
     ],
 
     "dthPlans": [{
-        "id": 1,
-        "name": "909",
-        "validity": "sixmonth"
+            "id": 1,
+            "name": "south Regional",
+            "validity": "sixmonth",
+            "amount": 500
 
-    }]
+        },
+        {
+            "id": 2,
+            "name": "News",
+            "validity": "sixmonth",
+            "amount": 300
+
+        },
+        {
+            "id": 3,
+            "name": "Movies",
+            "validity": "sixmonth",
+            "amount": 1500
+
+        }
+    ]
 }

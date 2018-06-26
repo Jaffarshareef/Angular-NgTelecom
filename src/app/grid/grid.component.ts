@@ -11,6 +11,8 @@ export class GridComponent implements OnInit,OnChanges {
   @Input() data: any;
   records: any;
   keys: string[];
+  @Input() srchString: string;
+  qry: string;
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +23,8 @@ export class GridComponent implements OnInit,OnChanges {
 
    ngOnChanges() {
      this.records = this.data;
+     this.qry = this.srchString;
+
      this.keys = Object.keys(this.records[0]);
 
 

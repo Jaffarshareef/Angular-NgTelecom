@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { MobilePlan } from './mobile-plan';
+import { MobilePlan, DthPlan } from './mobile-plan';
 import { Observable } from 'rxjs';
 
 @Injectable(
@@ -15,5 +15,10 @@ export class PlanService {
   getMobilePlanById(id: number): Observable<MobilePlan> {
 
     return this.service.get<MobilePlan>('http://localhost:3000/mobilePlans/' + id);
+   }
+
+   getAllDTHPlans(): Observable<DthPlan[]> {
+    return this.service.get<DthPlan[]>('http://localhost:3000/dthPlans');
   }
+ 
 }

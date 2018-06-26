@@ -1,4 +1,4 @@
 <div class="nav navbar-expand">
     <input type='text' name="srchString" [(ngModel)]='srchString'>
 </div>
-<app-grid [data]='mobilePlanList'></app-grid>
+<app-grid [data]='mobilePlanList' [srchString]=srchString></app-grid>
